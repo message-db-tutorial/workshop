@@ -1,6 +1,6 @@
 function write-message {
   local stream_name=${1:-$(stream-name)}
-  local message_type=${2:-$(message_type)}
+  local message_type=${2:-$(message-type)}
   local data=${3:-$(data)}
 
   message_id=$(echo $(uuidgen) | tr '[:upper:]' '[:lower:]')
